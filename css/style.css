@@ -1,116 +1,110 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
 
-
-*{
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
-    background:url(../background.jpg);
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container{
-    width: 500px;
-    text-align: center;
-    color: #fff;
-    -webkit-box-shadow: 11px 11px 69px 5px rgba(34, 60, 80, 0.42);
--moz-box-shadow: 11px 11px 69px 5px rgba(34, 60, 80, 0.42);
-box-shadow: 11px 11px 69px 5px rgba(34, 60, 80, 0.42);
-border-radius: 15px;
+body {
+  margin: 0;
+  background: url(../background.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.container {
+  width: 500px;
+  text-align: center;
+  color: #fff;
+  -webkit-box-shadow: 11px 11px 69px 5px rgba(34, 60, 80, 0.42);
+  -moz-box-shadow: 11px 11px 69px 5px rgba(34, 60, 80, 0.42);
+  box-shadow: 11px 11px 69px 5px rgba(34, 60, 80, 0.42);
+  border-radius: 15px;
+}
 
-#title{
-    font-weight: 300;
+#title {
+  font-weight: 300;
 }
-.image-container{
-    width: 200px;
-    height: 200px;
-    margin:80px auto;
-    
+.image-container {
+  width: 200px;
+  height: 200px;
+  margin: 80px auto;
 }
-.image-container img{
-    width: inherit;
-    height: inherit;
-    object-fit: cover;
-    border-radius: 50%;
-    animation: imageRotate 10s linear infinite;
-    animation-play-state: paused;
+.image-container img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 50%;
+  animation: imageRotate 10s linear infinite;
+  animation-play-state: paused;
 }
-.time{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 1rem;
+.time {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem;
 }
-.progress-container{
-    background-color: #fff;
-    width: 80%;
-    height: 4px;
-    margin: 0.2rem auto;
-    cursor:pointer;
-    border-radius: 10px;
+.progress-container {
+  background-color: #fff;
+  width: 80%;
+  height: 4px;
+  margin: 0.2rem auto;
+  cursor: pointer;
+  border-radius: 10px;
 }
-.progress{
-    height: inherit;
-    background-color: tomato;
-    width: 0%;
-    border-radius: inherit;
+.progress {
+  height: inherit;
+  background-color: tomato;
+  width: 0%;
+  border-radius: inherit;
 }
-.btn{
-margin: 1rem 3rem;
-border:none;
-color:#fff;
-font-size: 1.5rem;
-opacity: 0.7;
-background-color: transparent;
-cursor: pointer;
+.btn {
+  margin: 1rem 3rem;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 0.7;
+  background-color: transparent;
+  cursor: pointer;
 }
-.big{
-    font-size: 2rem;
+.big {
+  font-size: 2rem;
 }
-@keyframes imageRotate{
-
-from{
+@keyframes imageRotate {
+  from {
     transform: rotate(0);
-}
+  }
 
-to{
+  to {
     transform: rotate(360deg);
+  }
 }
-}
-.container.play img{
-animation-play-state: running;
+.container.play img {
+  animation-play-state: running;
 }
 
-@media only screen and (max-width: 500px){
-    .container{
-        width: 250px;
-    }
-    #title{
-        font-size: 18px;
-    }
-    .image-container{
-        width: 100px;
-        height: 100px;
-        margin:30px auto;
-    }
-    .time{
-        padding: 0.6rem;
-    }
-    .progress-container{
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 250px;
+  }
+  #title {
+    font-size: 18px;
+  }
+  .image-container {
+    width: 100px;
+    height: 100px;
+    margin: 30px auto;
+  }
+  .time {
+    padding: 0.6rem;
+  }
+  .progress-container {
     margin: 0.1rem auto;
-    }
-    .btn{
-margin: 1rem 1rem;
-font-size: 1.5rem;
-
-
-    }
+  }
+  .btn {
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+  }
 }
