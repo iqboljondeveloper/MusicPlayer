@@ -76,7 +76,6 @@ end.textContent = `${endMinutes == endMinutes < 10 ? '0' + endMinutes : endMinut
 // start time
 const startMinutes = Math.floor(curTime / 60)
 const startSecundes = Math.floor(curTime % 60)
-console.log(startMinutes, startSecundes);
 start.textContent = `${startMinutes == startMinutes < 10 ? '0' + startMinutes : startMinutes} : ${(startSecundes == startSecundes < 10 ? '0'  + startSecundes : startSecundes)}`
 
 }
