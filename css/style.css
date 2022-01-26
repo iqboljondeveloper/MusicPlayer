@@ -88,3 +88,29 @@ to{
 .container.play img{
 animation-play-state: running;
 }
+
+@media only screen and (max-width: 500px){
+    .container{
+        width: 250px;
+    }
+    #title{
+        font-size: 18px;
+    }
+    .image-container{
+        width: 100px;
+        height: 100px;
+        margin:30px auto;
+    }
+    .time{
+        padding: 0.6rem;
+    }
+    .progress-container{
+    margin: 0.1rem auto;
+    }
+    .btn{
+margin: 1rem 1rem;
+font-size: 1.5rem;
+
+
+    }
+}
